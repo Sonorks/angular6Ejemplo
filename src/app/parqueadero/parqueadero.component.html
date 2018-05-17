@@ -1,0 +1,17 @@
+
+<div class="container">
+  <ngb-tabset>
+    <ngb-tab title="Consulta vehiculo">
+      <ng-template ngbTabContent>
+        <form>
+          <div class="form-group">
+            <label for="placaConsulta">PLACA A CONSULTAR:</label>
+            <input type="text" [(ngModel)]="consultaPlaca" name="consultaPlaca" class="form-control" id="placaConsulta" required>
+          </div>
+          <button (click)="probar()" class="btn btn-success" style="margin: 3%">Consultar Vehiculo</button>
+          <button (click)="limpiar()" class="btn btn-info" style="margin: 3%">Limpiar</button>
+        </form>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
